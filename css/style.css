@@ -1,0 +1,932 @@
+/*   1-common style
+     2-genral style
+     3-sections
+       3.1 Header
+       3.2 home section
+       3.3 about section
+       3.4 works section
+       3.5 offer section 
+       3.6 choose section
+       3.7 number section
+       3.8 soon course section
+       3.9 social media section
+       3.10 library section
+       3.11 competition section
+       3.12 footer section 
+*/
+/*1-commom style---//////////////////////////////////////////////////////////////////*/
+.container{
+    width: 80%;
+    margin: auto;
+    /* background-color: blueviolet; */
+}
+.title{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 120px;
+}
+.line{
+    width: 70px;
+    height: 5px;
+    background-color: rgb(35, 141, 246);
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+
+/*2-general style---/////////////////////////////////////////////////////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+a{
+    text-decoration: none;
+}
+
+
+/*//////////////////////////////////SECTIONS/////////////////////////////////////////*/
+/*3.1 Header---//////////////////////////////////////////////////////////////////////*/
+.header{
+    width: 95%;
+    height: 60px;
+    background-color: rgb(1, 12, 31,0.87);
+    /* text-align: center; */
+    overflow: auto;
+    position: fixed;
+    top: 7px;
+    left: 40px;
+    z-index: 20;
+    border-radius: 17px;
+}
+.line-header{
+    height: 3px;
+    /* background-color: rgb(246, 35, 109);
+    opacity: 0; */
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: 3px;
+    visibility: hidden;
+    
+}
+.line1-header{
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: 3px;
+    
+    
+}
+
+.li-ul-header:hover .line-header{
+    left: 0;
+    /* opacity: 0.9; */
+    visibility: visible;
+}
+.li-ul-header:after{
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.7);
+
+
+}
+.li-ul-header:hover::after{
+    width: 78%;
+    height: 3px;
+    border-radius: 20px;
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.ul-header{
+    float:right;
+}
+.img-header{
+    height: 50px;
+    width: 110px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 4.7px;
+    border-radius: 17px;
+}
+.li-ul-header{
+    display: inline-block;
+    /* text-decoration: none; */ 
+    padding-top: 15px;
+    position: relative;
+}
+.li1-ul-header {
+    display: inline-block;
+    /* text-decoration: none; */ 
+    padding-top: 15px;
+    position: relative;
+}
+.li1-ul-header a{
+    font-size: 24px;
+    color: rgb(82, 110, 250);
+     padding-right: 20px;
+    }
+.li-ul-header a{
+font-size: 24px;
+color: rgb(82, 110, 250);
+ padding-right: 20px;
+}
+.blog-hover{
+    width: 130px;
+    height: 45px;
+    background-color: rgb(41, 80, 255);
+    color: #ffffff;
+    position: absolute;
+    z-index: 30;
+    position: fixed;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 12px;
+    right: 110px;
+    border: none;
+    visibility: hidden;
+}
+.yyy:hover .blog-hover{
+    visibility: visible;
+}
+ /*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+ /*3.2 Home section---//////////////////////////////////////////////////////////////////////////////////*/
+ .parent-home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/dreamstime_xxl_123552072.jpg);
+    position: relative;
+}
+.overlay-home{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.info-home{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    z-index: 5;
+    /* background-color: blueviolet; */
+    transform:translate(-50%,-50%) ;
+    text-align: center;
+    font-size: 30px;
+}
+.info-home p{
+    text-transform: capitalize;
+}
+.btn-home{
+    width: 125px;
+    height: 47px;
+    margin-left: 20px;
+    font-size: 23px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5%;
+    text-transform: capitalize;
+}
+ .btn1{
+    background-color: rgb(254, 252, 252);
+}
+.btn2{
+    background-color: rgb(7, 98, 255);
+}
+.btn-home:hover{
+    opacity: 0.7;
+}
+
+
+    
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*3.3 about section---/////////////////////////////////////////////////////////////////////////////////*/
+.div-about{
+    float: left;
+    margin-top: 100px;
+    padding-top: 30px;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    border: solid rgb(30, 30, 30) 1px;
+    position: relative;
+    
+}
+.div2{
+    margin: 0% 5%;
+    margin-top: 100px;
+}
+.div-about i{
+    font-size: 29px;
+    color:rgb(45, 117, 241)
+}
+.div-about h2{
+    font-size: 27px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+.div-about p{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(134, 134, 134);
+    text-transform: lowercase;
+}
+.a-parent-about{
+    font-size: 20px;
+    color: rgb(25, 73, 248);
+    text-transform: capitalize;
+}
+.div-about:after{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    /* background-color:black; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    content: "";
+    z-index: -1;
+
+}
+.div-about:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.6s;
+
+}
+.div-about:hover h2{
+    color: white;
+}
+.parent-about{
+    position: relative;
+    overflow: auto;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*3.4 works section---/////////////////////////////////////////////////////////////////////////////////*/
+.div-work{
+    height: 350px;
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin-top: 100px;
+    position: relative;
+    overflow: auto;
+}
+.parent-work{
+    overflow: auto;
+}
+.img-img-div-work{
+    height: 100%;
+    width: 100%
+}
+ .tr{
+    margin: 0px 5%; 
+    margin-top: 100px;
+ }
+ .overlay-div-work{
+    position: absolute;
+    visibility: hidden;
+    text-align: center;
+    top: 0;
+    margin-left: 50%;
+    /* margin-top: 50%; */
+    transform: translate(-50%,0%);
+    z-index: 1;
+ }
+  .div-work:hover .overlay-div-work{
+    visibility: visible;
+    transition: 2s;
+  }
+  .div-work:hover .overlay-div-work i{
+    font-size: 60px;
+   margin-top: 20px;
+   margin-left: 20px;
+   color:rgb(45, 117, 241)
+  }
+  .div-work:hover .overlay-div-work h2{
+    margin-top: 50px;
+    color: white;
+    font-size:60px ;
+  }
+  .div-work:hover .overlay-div-work button{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    border: solid 2px rgb(45, 117, 241);
+    border-radius: 5px;
+    color: rgb(45, 117, 241);
+    width: 100px;
+    height: 25px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .btn-work:hover{
+    opacity: 0.9;
+  }
+ .div-work:hover .overlay-div-work p{
+    color: rgb(183, 183, 183);
+    font-size: 27px;
+  }
+  .div-work:after{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    content: "";   
+}
+.div-work:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 2s;
+}
+.container-work{
+    width: 95%;
+    background-color: rgb(240, 240, 240);   
+}
+.title-work{
+    padding-top: 30px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*3.5 offer section---/////////////////////////////////////////////////////////////////////////////////*/
+.div-offer{
+    float: left;
+    
+    width: 30%;
+    margin-top: 60px;
+    border: solid black 1px;
+    height: 170px;
+    /* overflow: auto; */
+    position: relative;
+}
+.tt{
+    margin: 0 5%;
+    margin-top: 60px;
+}
+.parent-offer{
+    overflow: auto;
+    /* position: relative; */
+}
+.div-offer  i{
+    display: inline;
+    float: left;
+    font-size: 40px;
+    color:rgb(45, 117, 241);
+    padding: 20px 13px;
+    position: relative;  
+    
+}
+.div-offer  h2{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.div-offer  p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+.div-offer:after{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    content: "";   
+    z-index: -1;
+}
+.div-offer:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 1s;
+}
+.div-offer:hover h2{
+    color: white;
+}
+.div-offer:hover p{
+    color: rgb(213, 213, 213);  
+}
+.div-offer p{
+    text-transform: lowercase;
+}
+.div-offer button{
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 15px;
+    background-color:rgb(45, 117, 241);
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.div-offer button:hover{
+    opacity: 0.8;
+}
+.div-offer button a{
+    color: white;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*3.6 choose section---/////////////////////////////////////////////////////////////////////////////////*/
+.container-choose{
+    background-color: rgb(240, 240, 240);
+    width: 98%;
+    margin-top: 50px;
+    border: none;
+    
+}
+.line-choose{
+    height: 4px;
+    background-color: rgb(45, 117, 241);
+   margin-top: 7px;
+}
+.parent-choose{
+    overflow: auto;
+}
+.info-choose{
+    float: left;
+    margin-top: 150px;
+    margin-left: 170px;
+    overflow: auto;
+}
+.icon-choose{
+    margin-top: 20px;
+}
+.icon-choose p{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    margin-left: 20px;
+}    
+.info-choose h2{
+    font-size: 40px;
+}
+.info-choose i{
+    float: left;
+    font-size: 23px;
+    color:rgb(45, 117, 241);   
+}
+.img-choose{
+    margin-top: 150px;
+    margin-left: 280px;
+    float: left;
+    height: 500px;
+    width: 350px;
+    text-align: center;
+}
+.img-choose img{
+    height: 320px;
+    width: 300px;  
+    border-radius: 15px;  
+}
+.li-choose{
+    text-align: center; 
+}
+.li-choose ul{
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+}
+.li-choose ul li{
+    color: rgb(198, 198, 198);
+    font-size: 35px;  
+}
+.li-choose ul li:hover{
+    color: rgb(45, 117, 241);
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*3.7 number section---/////////////////////////////////////////////////////////////////////////////////*/
+.container-number{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/coding.jpeg)  ;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-attachment: fixed;  
+    
+    
+}
+.opacity-number{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    
+
+}
+.parent-number{
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+.icon-number{
+    float: left;
+    color: rgb(74, 132, 232);
+    width: 25%;
+    text-align: center;
+    margin-top: 120px
+}
+.icon-number i{
+    font-size: 55px;
+}
+.icon-number h2{
+    margin-top: 13px;
+    color: white;
+    font-size: 50px;
+}
+.icon-number p{
+    color: white;
+    font-size: 18;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*3.8 soon course section---/////////////////////////////////////////////////////////////////////////////////*/
+.div-soon{
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 100px;
+    border: solid black 1px;
+     position: relative;
+    overflow: auto; 
+}
+.parent-soon{
+     overflow: auto;
+    
+}
+.sp{
+    margin: 0 5%;
+    margin-top: 100px;
+}
+.circle-soon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid rgb(45, 117, 241) 2px;
+    margin: auto;
+}
+.div-soon .h2-soon{
+    margin-top: 15px;
+    color: rgb(45, 117, 241);
+}
+.div-soon p{
+    margin-top: 5px;
+    font-size: 17px;
+    text-transform: lowercase;
+}
+.div-soon button{
+    width: 120px;
+    height: 30px;
+    background-color:rgb(45, 117, 241);
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.div-soon button:hover{
+    opacity: 0.9;
+}
+.div-soon button a{
+    color: white;
+}
+.circle-soon h2{
+    font-size: 50px;
+}
+.circle-soon p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.div-soon:after{
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    background-color: black; 
+    opacity: 0.7;
+    z-index: -1;
+}
+.div-soon:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 0.3;
+}
+.div-soon:hover .circle-soon{
+    color: rgb(62, 111, 247);
+    border: solid 2px rgb(255, 255, 255);
+    transition: 2s;
+}
+.div-soon:hover .h2-soon{
+    color: rgb(255, 255, 255);
+    transition: 2s;
+}
+.container-soon{
+    margin-top: 0px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*3.9 social media section---/////////////////////////////////////////////////////////////////////////////////*/
+.container-social{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/photo.jpeg)  ;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+.parent-social{
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+}
+.div-social{
+    color: white;
+    float: left;
+    width: 50%;
+    margin-top: 140px;    
+    overflow: auto;
+}
+.img-social{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* border: solid white 2px; */
+     background-image: url(../images/facebook-6338507_1280.webp);
+    background-size: cover;
+    margin-left: 110;   
+}
+.insta{
+    background-image: url(../images/instagram.webp);
+    background-size: cover;
+}
+.info-social{
+    margin-left: 200px
+}
+.info-social h2{
+    font-size: 27px;
+}
+.info-social a{
+    color: rgb(51, 112, 243);
+    font-size: 20px;
+}
+.ss{
+    margin-top: 45px;
+    text-align: center;
+    width: 70%;
+}  
+/*//////////////////////////////////SECTIONS/////////////////////////////////////////*/
+/*3.10 library section---//////////////////////////////////////////////////////////////////////*/
+.title-library{
+    margin-top: 120px;
+}
+.div-library{
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(243, 243, 243);
+    position: relative;
+}
+.div-script{
+    margin: 0 5%;
+    margin-top: 100px;
+}
+.parent-library{
+    overflow: auto;
+}
+.img-library img{
+    height: 220px;
+    width: 100%;
+}
+.img-library{
+    position: relative;
+    width: 65%;
+    margin: auto;
+    margin-top: 20px;
+}
+.overlay-library{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.div-library:hover .overlay-library{
+    visibility: visible;
+}
+.overlay-library i{
+    display: block;
+    background-color:rgb(61, 132, 254);
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    width: 40px;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+}
+.div-library:after{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+.div-library:hover::after{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.info-library h2{
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 27px;
+}
+.info-library p{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: blue;
+}
+.div-library:hover .info-library h2{
+    color:rgb(87, 147, 251);
+}
+.div-library:hover .info-library p{
+    color: rgb(0, 0, 0);
+}
+/*//////////////////////////////////SECTIONS/////////////////////////////////////////*/
+/*3.10 competition section---//////////////////////////////////////////////////////////////////////*/
+.div-competition{
+    width: 30%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    /* margin-top: 100px; */
+    position: relative;
+}
+.comp2{
+    margin: 0 5%;
+    /* margin-top: 100px; */
+}
+.parent-competition{
+    overflow: auto;
+    background-color: rgb(243, 243, 243);
+    margin-top: 100px;
+}
+.img-competition img{
+    width: 250px;
+    height: 300px;
+    margin-left: 30px;
+
+}
+.icon-competition{
+    overflow: auto;
+    margin-left: 15px;
+}
+.icon1-competition{
+    float: left;
+    overflow: auto;
+    margin-top: 20px;
+}
+.icon1-competition i{
+    float: left;
+    padding-left: 15px;
+    color: rgb(52, 147, 249);
+    
+}
+.icon1-competition p{
+    float: left;
+}
+.info-competition h2{
+    margin-left: 30px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 27px;
+
+}
+.info-competition p{
+    margin-left: 30px;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: gray;
+}
+.info-competition .p2-comp{
+    margin-left: 30px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    
+    
+}
+.info-competition .p2-comp a{
+    color: rgb(26, 88, 246);
+}
+.div-competition:after{
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    background-color: rgba(74, 163, 253, 0.3);
+}
+.div-competition:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    background-color: rgba(53, 175, 250, 0.2)
+}
+/*//////////////////////////////////SECTIONS/////////////////////////////////////////*/
+/*3.12 footer section---//////////////////////////////////////////////////////////////////////*/
+.container-footer{
+    background-color: rgb(64, 82, 107);
+    width: 100%;
+}
+.div-footer{
+    text-align: center;
+}
+.img-footer{
+    padding-top: 65px;
+}
+.img-footer img{
+    width: 200px;
+    height: 100px;
+}
+
+.icon-footer-p{
+
+    overflow: auto;
+    width: 25%;
+    margin: auto;
+    padding-left: 30px;
+    margin-top: 20px;
+    
+    
+}
+.icon-footer{
+    float: left;
+    font-size: 27px;
+   height: 45px;
+   width: 45px;
+   border-radius:50%;
+   background-color: rgb(54, 141, 253);
+   margin-left: 7px;
+}
+.icon-footer:hover{
+    background-color: rgb(29, 78, 253);
+}
+.icon-footer i{
+    line-height: 45px;
+   color: white;
+   
+}
+.info-footer .p1-footer{
+    color: rgb(212, 212, 212);
+    text-transform: uppercase;
+    margin-top: 15px;   
+}
+.info-footer .p2-footer{
+    color: rgb(212, 212, 212);
+    text-transform: uppercase;
+    margin-top: 7px;
+    padding-bottom: 40px;
+}
+  
+  
+
+
+
+
+ 
+
+
+
+
